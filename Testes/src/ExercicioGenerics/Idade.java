@@ -6,7 +6,7 @@ public class Idade {
 	
 	public Idade(int value) {
 		this.value = value;
-	}
+	} 
 
 	public int getValue() {
 		return value;
