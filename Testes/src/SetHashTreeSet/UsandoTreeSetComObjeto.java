@@ -3,8 +3,6 @@ package SetHashTreeSet;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-import javafx.animation.Interpolator;
-
 public class UsandoTreeSetComObjeto {
 
 	public static void main(String[] args) {
