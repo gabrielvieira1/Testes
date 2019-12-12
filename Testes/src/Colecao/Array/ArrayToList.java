@@ -17,3 +17,6 @@ public class ArrayToList {
 			System.out.println(cor);
 	}
 }
+
+
+
