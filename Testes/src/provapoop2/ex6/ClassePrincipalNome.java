@@ -9,7 +9,6 @@ public class ClassePrincipalNome {
 		
 		NomeSobrenome.Nome nome =  new NomeSobrenome.Nome("José");
 		NomeSobrenome.Sobrenome sobrenome = new NomeSobrenome.Sobrenome("Silva");
-		NomeSobrenome nomeSobrenome = new NomeSobrenome(nome, sobrenome);
 		System.out.println(nome.getNome() + " " + sobrenome.getSobrenome());
 	}
 

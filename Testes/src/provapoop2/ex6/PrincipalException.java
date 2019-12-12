@@ -14,19 +14,22 @@ public class PrincipalException {
 		System.out.println("Finanlizando metodo1...");
 	}
 
-	static void metodo2() throws ArrayIndexOutOfBoundsException {
+	static void metodo2() throws ArrayIndexOutOfBoundsException { // Aqui adiciona a Exececao que ele diz no corpo da pergunta
 		System.out.println("Iniciando metodo2...");
-		try {
+		try { //aqui tu vai tentar executar com o try
 			int[] num = new int[10];
 			for (int i = 0; i <= 15; i++) {
 				num[i] = i;
 				System.out.println(i);
 			}
-		} catch (Exception e) {
+			
+			// se der erro aqui em cima 
+		} catch (Exception e) { // O catch vai pegar o erro e tratar 
+			// depois de tratar o erro vai seguir a compilação do codigo
 		System.out.println("Erro array: " + e);
 		}
+		// fim
 		System.out.println("Finanlizando metodo2...");
-		
 	}
 
 }
