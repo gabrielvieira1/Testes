@@ -1,6 +1,6 @@
 package poo.slide2.encapsulamento;
 
-public class AbstracaoFuncao {
+public class FuncaoAbstracaoDeProcessos {
 
 	public static void main(String[] args) {
 		System.out.println(soma(2, 3));
