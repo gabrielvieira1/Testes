@@ -8,8 +8,26 @@ import java.util.Map;
 import java.util.Set;
 
 public class ListasDeNomes {
-
+	
 	public static void main(String[] args) {
+		ArrayList<String> primeiraLista = new ArrayList<String>();
+		ArrayList<String> segundaLista = new ArrayList<String>();
+		primeiraLista.add("Helena");
+		primeiraLista.add("João");
+		primeiraLista.add("Elaine");
+		segundaLista.add("Jose");
+		segundaLista.add("Maria");
+		segundaLista.add("Pedro");
+		
+		Map<Integer, ArrayList> objMap = new HashMap<Integer, ArrayList>();
+		objMap.put(1, primeiraLista);
+		objMap.put(2, segundaLista);
+		for (ArrayList listas : objMap.values()){
+		System.out.println(listas);
+	}
+	}
+
+/*	public static void main(String[] args) {
 		ArrayList<String> primeiraLista = new ArrayList<String>();
 		ArrayList<String> segundaLista = new ArrayList<String>();
 		segundaLista.add("Helena");
@@ -24,8 +42,7 @@ public class ListasDeNomes {
 		objMap.put(2, segundaLista);
 		for (ArrayList listas : objMap.values()) {
 			System.out.println(listas);
-		}
-	
+		} 
 //		primeira.put(new Integer(1), "Maria");
 //		Set s = primeira.entrySet();
 //	Iterator it = s.iterator();
@@ -56,6 +73,6 @@ public class ListasDeNomes {
 //		System.out.println(segundaLista.toString());
 //		System.out.println(objMap.entrySet());
 //		System.out.println(objMap.toString());
-	}
+	}*/
 
 }
