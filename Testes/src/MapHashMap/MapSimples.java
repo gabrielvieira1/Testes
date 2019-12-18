@@ -24,11 +24,15 @@ public class MapSimples {
 		
 		Iterator it = s.iterator();
 		
-		while (it.hasNext()) {
-			Map.Entry m = (Map.Entry) it.next();
-			int key = (Integer) m.getKey();
-			String value = (String) m.getValue();
-			System.out.println("Key: " + key + " value: " + value);
+//		while (it.hasNext()) {
+//			Map.Entry m = (Map.Entry) it.next();
+//			int key = (Integer) m.getKey();
+//			String value = (String) m.getValue();
+//			System.out.println("Key: " + key + " value: " + value);
+//		}
+		
+		for(Map.Entry<Object, String> entry : mapAnimals.entrySet()) {
+			System.out.println("Key: " + entry.getKey() + " value: " + entry.getValue());
 		}
 		
 		

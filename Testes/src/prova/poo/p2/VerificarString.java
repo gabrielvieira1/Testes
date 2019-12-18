@@ -18,7 +18,7 @@ public class VerificarString {
 		try {
 		novaFrase = frase.toUpperCase();
 		} catch (NullPointerException e) {
-			throw new Exception(e);
+			throw new Exception("Erro aqui " + e);
 		}
 		finally {
 			System.out.println("Frase antiga: " + frase);

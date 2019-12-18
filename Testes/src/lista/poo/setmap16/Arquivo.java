@@ -9,14 +9,14 @@ import java.io.FileOutputStream;
 import java.util.Map;
 import java.util.HashMap;
 
-public class Arquivo<T> {
+public class Arquivo<T> extends RegistroPessoas{
 	T objet;
 	
 	File arquivoAssinaturas = new File("assinaturas.txt");
-	Map<Object, String> objeto = new HashMap<Object, String>();
+	Map<Object, Object> objeto = new HashMap<Object, Object>();
 	
-	public Arquivo(T objet) {
-		this.objet = objet;
+	public Arquivo(RegistroPessoas registroPessoas) {
+		this.objet = (T) registroPessoas;
 	}
 	public String gravarLista(Map<Object, String> obj) throws IOException  {
 		FileOutputStream fos;
@@ -32,10 +32,10 @@ public class Arquivo<T> {
 			return "Gravado com sucesso";
 			
 	}
-	public Map<Object, String> retornaLista() throws ClassNotFoundException, IOException{
+	public Map<Object, Object> retornaLista() throws ClassNotFoundException, IOException{
 		FileInputStream fis = new FileInputStream(arquivoAssinaturas);
 		ObjectInputStream ois = new ObjectInputStream(fis);
-		objeto = (Map<Object, String>) ois.readObject();
+		objeto = (Map<Object, Object>) ois.readObject();
 		
 		return objeto;
 	}

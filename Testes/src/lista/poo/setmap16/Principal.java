@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Principal<T> {
 	static Scanner scan = new Scanner(System.in);
 	static RegistroPessoas regPessoas = new RegistroPessoas();
-	Arquivo<T> arquivo = new Arquivo<T>(null);
+	Arquivo<RegistroPessoas> arquivo = new Arquivo<RegistroPessoas>(new RegistroPessoas());
 	
 
 	public static void main(String[] args) {
