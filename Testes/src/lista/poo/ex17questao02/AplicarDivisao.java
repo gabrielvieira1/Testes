@@ -1,4 +1,4 @@
-package lista17poo.questao02;
+package lista.poo.ex17questao02;
 
 import java.util.Scanner;
 

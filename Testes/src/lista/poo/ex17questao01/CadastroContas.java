@@ -1,4 +1,4 @@
-package lista17poo.questao01;
+package lista.poo.ex17questao01;
 import java.util.Scanner;
 
 public class CadastroContas {

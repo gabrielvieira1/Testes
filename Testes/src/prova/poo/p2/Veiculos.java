@@ -30,14 +30,18 @@ public class Veiculos {
 	}
 	
 	public static void listaVeiculosSofisticados() {
-		Set s = veiculos.entrySet();
+		
+		for(Map.Entry<Object, String> obj : veiculos.entrySet()) {
+			System.out.println("Key :" + obj.getKey() + " Value: " + obj.getValue());
+		}
+	/*	Set s = veiculos.entrySet();
 		Iterator it = s.iterator();
 		while (it.hasNext()) {
 			Map.Entry m =(Map.Entry) it.next();
 			int key = (Integer) m.getKey();
 			String value = (String) m.getValue();
 			System.out.println("key :" + key + " Value :" + value);
-		}
+		}*/
 		
 	}
 
