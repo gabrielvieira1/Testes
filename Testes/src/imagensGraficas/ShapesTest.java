@@ -12,6 +12,7 @@ public class ShapesTest {
 		
 		Shapes panel = new Shapes(choice);
 		
+		
 		JFrame application = new JFrame();
 		
 		application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

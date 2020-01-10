@@ -1,17 +1,16 @@
 package imagensGraficas;
 
 import java.awt.Graphics;
+
 import javax.swing.JPanel;
-import javax.swing.JOptionPane;
 
 public class Shapes extends JPanel{
 	
 	private int choice;
-
+	
 	public Shapes(int userChoice) {
 	choice = userChoice;
 	}
-	
 	public void paintComponet(Graphics g) {
 		super.paintComponent(g);
 		
