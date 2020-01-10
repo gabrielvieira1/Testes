@@ -10,6 +10,10 @@ public class CadastrarGato {
 		return null;
 	}
 	private boolean existeGato(String nome) {
+		String gato = null;
+		if (gato == nome) {
+			return true;
+		}
 		return false;
 	}
 
