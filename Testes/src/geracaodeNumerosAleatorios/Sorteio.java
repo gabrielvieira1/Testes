@@ -7,9 +7,9 @@ public class Sorteio {
 	public static void main(String[] args) {
 		SecureRandom randomNumbers = new SecureRandom();
 		
-		int frequency1 = 0; //truque de mestre
-		int frequency2 = 0; //ultimato
-		int frequency3 = 0; //guardioes da gaaxia 2
+		int frequency1 = 0; //Como treinar o seu dragão
+		int frequency2 = 0; //Simplesmente acontece
+		int frequency3 = 0; //
 		int frequency4 = 0; //pantera
 		int frequency5 = 0; //dope
 		int frequency6 = 0; //super bad
